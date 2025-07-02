@@ -10,7 +10,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                bat 'pytest tests/ --html=report.html --self-contained-html'
+                bat 'pytest --html=report.html --self-contained-html'
             }
         }
     }
